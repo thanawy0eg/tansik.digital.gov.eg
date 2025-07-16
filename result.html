@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>نتيجة الطالب</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="menu-icon">
+  &#9776;
+</div>
+
+<style>
+  .menu-icon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 26px;
+    cursor: pointer;
+    color: #333;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+  }
+</style>
+<div class="result-summary">
+  <p class="main-status">الطالب ناجح وتخطى المواد غير المضافة</p>
+
+  <ul class="excluded-subjects">
+    <li>التربية الوطنية</li>
+    <li>التربية الدينية</li>
+    <li>اللغة الثانية</li>
+  </ul>
+
+  <p class="final-success">الطالب ناجح في الدور الأول</p>
+</div>
+
+<style>
+  .result-summary {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .main-status {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 15px;
+  }
+
+  .excluded-subjects {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-size: 16px;
+  }
+
+  .excluded-subjects li {
+    margin: 5px 0;
+  }
+
+  .final-success {
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+  }
+</style>
+<div class="footer-note">
+  حقوق الملكية تابعة لوزارة التربية والتعليم المصرية
+</div>
+
+<style>
+  .footer-note {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #555;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+    z-index: 1000;
+  }
+</style>
+  <div class="container">
+    <header class="moe-header">
+      <img src="logo.png" alt="شعار وزارة التربية والتعليم" class="moe-logo">
+      <h1>وزارة التربية والتعليم</h1>
+    </header>
+    <h2>نتيجة الثانوية العامة 2025</h2>
+    <p><strong>اسم الطالب:</strong> <span id="name"></span></p>
+    <p><strong>رقم الجلوس:</strong> <span id="seat"></span></p>
+    <p><strong>الرقم القومي:</strong> <span id="nid"></span></p>
+    <p><strong>شعبة الطالب:</strong> <span id="division"></span></p>
+
+    <h3>الدرجات:</h3>
+    <ul id="grades"></ul>
+  </div>
+  <script src="script.js"></script>
+if (subject === "اللغة العربية") {
+    grade = Math.floor(Math.random() * (80 - 73 + 1)) + 73; // من 73 إلى 80
+} else {
+    grade = Math.floor(Math.random() * (60 - 54 + 1)) + 54; // من 54 إلى 60
+}
+</body>
+</html>
